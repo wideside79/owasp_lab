@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  owasp-lab:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./vuln-webapp:/var/www/html
